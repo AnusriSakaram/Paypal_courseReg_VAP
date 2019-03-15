@@ -1,0 +1,22 @@
+html
+    body
+        center
+            label #{message}
+            br
+            form(action = '/login' method = 'post')
+                table
+                    tr
+                        td
+                            label Registration number: 
+                        td
+                            input(type = "text" name = "regno")
+                    tr
+                        td
+                            label Password:
+                        td
+                            input(type = "password" name = "password")
+                button.btn.btn-primary(type='submit') Login
+            br
+            label #{message}
+            form(action = '/signup_button' method = 'get')
+                button.btn.btn-primary(type='submit') Sign-up 
